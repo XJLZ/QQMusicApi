@@ -59,7 +59,6 @@ fs.readdirSync(path.join(__dirname, 'routes')).forEach(file => {
       req.query = {
         ...req.query,
         ...req.body,
-        ownCookie: 1,
       };
       // qq 登录
       let uin = (req.cookies.uin || '');
